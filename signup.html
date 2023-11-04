@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Apple stores</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <!-- <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3"> -->
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="sign-in.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header sticky-top py-1">
+        <nav class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="#" aria-label="Product">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                    <path
+                        d="M 33.375 0 C 30.539063 0.191406 27.503906 1.878906 25.625 4.15625 C 23.980469 6.160156 22.601563 9.101563 23.125 12.15625 C 22.65625 12.011719 22.230469 11.996094 21.71875 11.8125 C 20.324219 11.316406 18.730469 10.78125 16.75 10.78125 C 12.816406 10.78125 8.789063 13.121094 6.25 17.03125 C 2.554688 22.710938 3.296875 32.707031 8.90625 41.25 C 9.894531 42.75 11.046875 44.386719 12.46875 45.6875 C 13.890625 46.988281 15.609375 47.980469 17.625 48 C 19.347656 48.019531 20.546875 47.445313 21.625 46.96875 C 22.703125 46.492188 23.707031 46.070313 25.59375 46.0625 C 25.605469 46.0625 25.613281 46.0625 25.625 46.0625 C 27.503906 46.046875 28.476563 46.460938 29.53125 46.9375 C 30.585938 47.414063 31.773438 48.015625 33.5 48 C 35.554688 47.984375 37.300781 46.859375 38.75 45.46875 C 40.199219 44.078125 41.390625 42.371094 42.375 40.875 C 43.785156 38.726563 44.351563 37.554688 45.4375 35.15625 C 45.550781 34.90625 45.554688 34.617188 45.445313 34.363281 C 45.339844 34.109375 45.132813 33.910156 44.875 33.8125 C 41.320313 32.46875 39.292969 29.324219 39 26 C 38.707031 22.675781 40.113281 19.253906 43.65625 17.3125 C 43.917969 17.171875 44.101563 16.925781 44.164063 16.636719 C 44.222656 16.347656 44.152344 16.042969 43.96875 15.8125 C 41.425781 12.652344 37.847656 10.78125 34.34375 10.78125 C 32.109375 10.78125 30.46875 11.308594 29.125 11.8125 C 28.902344 11.898438 28.738281 11.890625 28.53125 11.96875 C 29.894531 11.25 31.097656 10.253906 32 9.09375 C 33.640625 6.988281 34.90625 3.992188 34.4375 0.84375 C 34.359375 0.328125 33.894531 -0.0390625 33.375 0 Z M 32.3125 2.375 C 32.246094 4.394531 31.554688 6.371094 30.40625 7.84375 C 29.203125 9.390625 27.179688 10.460938 25.21875 10.78125 C 25.253906 8.839844 26.019531 6.828125 27.1875 5.40625 C 28.414063 3.921875 30.445313 2.851563 32.3125 2.375 Z M 16.75 12.78125 C 18.363281 12.78125 19.65625 13.199219 21.03125 13.6875 C 22.40625 14.175781 23.855469 14.75 25.5625 14.75 C 27.230469 14.75 28.550781 14.171875 29.84375 13.6875 C 31.136719 13.203125 32.425781 12.78125 34.34375 12.78125 C 36.847656 12.78125 39.554688 14.082031 41.6875 16.34375 C 38.273438 18.753906 36.675781 22.511719 37 26.15625 C 37.324219 29.839844 39.542969 33.335938 43.1875 35.15625 C 42.398438 36.875 41.878906 38.011719 40.71875 39.78125 C 39.761719 41.238281 38.625 42.832031 37.375 44.03125 C 36.125 45.230469 34.800781 45.988281 33.46875 46 C 32.183594 46.011719 31.453125 45.628906 30.34375 45.125 C 29.234375 44.621094 27.800781 44.042969 25.59375 44.0625 C 23.390625 44.074219 21.9375 44.628906 20.8125 45.125 C 19.6875 45.621094 18.949219 46.011719 17.65625 46 C 16.289063 45.988281 15.019531 45.324219 13.8125 44.21875 C 12.605469 43.113281 11.515625 41.605469 10.5625 40.15625 C 5.3125 32.15625 4.890625 22.757813 7.90625 18.125 C 10.117188 14.722656 13.628906 12.78125 16.75 12.78125 Z" />
+                </svg></a>
+            <a class="py-2 d-none d-md-inline-block" href="#">store</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Mac</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">ipad</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">watch</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Entertainment</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Accessories</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Airpods</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-normal">Apple Stores</h1>
+                <p class="lead fw-normal">The best way to buy the products you love.</p>
+                <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+                <div class="my-3 py-3">
+                    <p>MACBOOK PRO 14” AND 16”</p>
+                    <h2 class="display-5"><strong>Mind-blowing.</strong></h2>
+                    <h2 class="display-5"><strong>Head-turning.</strong></h2>
+                    <p class="lead">From $1599 or $133.25/mo for 12 mo.</p>
+
+                </div>
+                <div class="rf-ccard-img-full-wrapper"></div>
+                <div class="rf-ccard-img-full-wrapper">
+                    <img src="images/macbuk prr.jpg" width="400" height="400" alt="">
+                </div>
+            </div>
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <p>IMAC</p>
+                    <h2 class="display-5"><strong>Packed with more juice</strong></h2>
+                    <p class="lead">From $1299 or $108.25/mo for 12 mo.</p>
+
+                </div>
+                <div class="rf-ccard-img-full-wrapper"></div>
+                <div class="rf-ccard-img-full-wrapper">
+                    <img src="images/imac.jpg" width="400" height="440" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <p>IPHONE 15 PRO</p>
+                    <h2 class="display-5"><strong>Titanium</strong></h2>
+                    <p class="lead">From $999 or $41.62/mo for 24 mo.</p>
+                </div>
+
+                <div class="rf-ccard-img-full-wrapper"></div>
+                <div class="rf-ccard-img-full-wrapper">
+                    <img src="images/iphne 15 prr.jpg" width="300" height="400" alt="">
+                </div>
+
+
+
+            </div>
+            <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+                <div class="my-3 py-3">
+                    <p>APPLE WATCH SERIES 9</p>
+                    <h2 class="display-5"><strong>Smarter. Brightier. Mightier</strong></h2>
+                    <p class="lead">From $399 or $33.25/mo. for 12 mo.</p>
+                </div>
+                <div class="rf-ccard-img-full-wrapper"></div>
+                <div class="rf-ccard-img-full-wrapper">
+                    <img src="images/apple watch series 9.jpg" width="300" height="400" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <p>AIRPODS PRO(2ND GENERATION)</p>
+                    <h2 class="display-5"><strong>Adaptive Audio.</strong></h2>
+                    <h2 class="display-5"><strong>Now playing.</strong></h2>
+                    <p class="lead">$249.00 or $41.50/mo. for 6 mo.</p>
+                </div>
+                <div class="rf-ccard-img-full-wrapper"></div>
+                <div class="rf-ccard-img-full-wrapper">
+                    <img src="images/airpds.jpg" width="380" height="450" alt="">
+                </div>
+            </div>
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 py-3">
+                    <p>APPLE SPECIALIST</p>
+                    <h2 class="display-5"><strong>Shop one on one with a <br> specialist. Online or in store</strong>
+                    </h2>
+                </div>
+                <div class="rf-ccard-img-full-wrapper"></div>
+                <div class="rf-ccard-img-full-wrapper">
+                    <img src="images/store-card-50-specialist-help-202305.jpg" width="450" height="480" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <p style="color: orangered;"><strong>NEW</strong></p>
+                    <h2 class="display-5"><strong>Shop with a specialist over video.</strong></h2>
+                    <div>choose your next device <br> in a guided,one-way <br> video session.</div>
+
+                </div>
+                <div class="rf-ccard-img-full-wrapper"></div>
+                <div class="rf-ccard-img-full-wrapper">
+                    <img src="images/specialist.jpg" width="450" height="480" alt="">
+                </div>
+            </div>
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 py-3">
+                    <p>APPLE TV+</p>
+                    <h2 class="display-5"><strong>Get 3 months of <br> Apple TV+ free when <br> you buy an apple
+                            device.</strong></h2>
+
+                </div>
+                <div class="rf-ccard-img-full-wrapper"></div>
+                <div class="rf-ccard-img-full-wrapper">
+                    <img src="images/apple tv.jpg" width="450" height="480" alt="">
+                </div>
+            </div>
+        </div><br><br>
+    </main>
+    <div id="global-footersection" class="as-footnotes js flex-box" data non-snippet>
+        <div class="as-footnotes content" data-autom="page-legal-footnotes">
+            <div class="as-footnotes-sosumi">
+                <div class="footnotes" role="list" aria-label="footnotes">
+                    <p role="listitem">
+
+                        * Pricing for iPhone 15 and iPhone 15 Plus includes a $30 connectivity discount that requires
+                        activation with AT&T, T-Mobile, or Verizon. Available to qualified customers and requires
+                        24-month installment loan when you select Citizens One or Apple Card Monthly Installments (ACMI)
+                        as payment type at checkout at Apple. You’ll need to select AT&T, T-Mobile, or Verizon as your
+                        carrier when you check out. An iPhone purchased with ACMI is always unlocked, so you can switch
+                        carriers at any time. Subject to credit approval and credit limit. Taxes and shipping are not
+                        included in ACMI and are subject to your card’s variable APR. Additional Apple Card Monthly
+                        Installments terms are in the Apple Card Customer Agreement(Opens in a new window). Additional
+                        iPhone Payments terms are here(Opens in a new window). ACMI is not available for purchases made
+                        online at special storefronts. The last month’s payment for each product will be the product's
+                        purchase price, less all other payments at the monthly payment amount. ACMI financing is subject
+                        to change at any time for any reason, including but not limited to, installment term lengths and
+                        eligible products. See https://support.apple.com/kb/HT211204(Opens in a new window) for
+                        information about upcoming changes to ACMI financing.
+                    </p>
+                    <p role="listitem">
+                        ◊ Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if
+                        you select it at checkout in the U.S. for eligible Apple products purchased at Apple Store
+                        locations, apple.com(Opens in a new window), the Apple Store app, or by calling 1-800-MY-APPLE,
+                        and is subject to credit approval and credit limit. See
+                        https://support.apple.com/kb/HT211204(Opens in a new window) for more information about eligible
+                        products. APR ranges may vary based on when you accepted an Apple Card. Cardholders who accept
+                        an Apple Card on and/or after August 10, 2023: Variable APRs for Apple Card, other than ACMI,
+                        range from 19.24% to 29.49% based on creditworthiness. Rates as of August 10, 2023. Existing
+                        cardholders: See your Customer Agreement for applicable rates and fee. If you buy an
+                        ACMI-eligible product by choosing to pay in full with Apple Card (instead of using ACMI), that
+                        purchase is subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI
+                        purchases are subject to the variable APR, not 0% APR. You’ll need to select AT&T, T-Mobile, or
+                        Verizon as your carrier when you check out. An iPhone purchased with ACMI is always unlocked, so
+                        you can switch carriers at any time. ACMI is not available for purchases made online at the
+                        following special stores: Apple Employee Purchase Plan; participating corporate Employee
+                        Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military
+                        Purchase Programs, or on refurbished devices. The last month’s payment for each product will be
+                        the product's purchase price, less all other payments at the monthly payment amount. ACMI
+                        financing is subject to change at any time for any reason, including but not limited to,
+                        installment term lengths and eligible products. See https://support.apple.com/kb/HT211204(Opens
+                        in a new window) for information about upcoming changes to ACMI financing. See the Apple Card
+                        Customer Agreement(Opens in a new window) for more information about ACMI financing.
+                    </p>
+                    <p role="listitem"></p>
+                    <p>To access and use all Apple Card features and products available only to Apple Card users, you
+                        must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of
+                        iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying
+                        applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+                    </p>
+                    <p>
+                        If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions
+                        about Apple Card.
+                    </p>
+                    <p role="listitem"></p>
+                    <p role="listitem">
+                        † Monthly pricing is available when you select Apple Card Monthly Installments (ACMI) as payment
+                        type at checkout at Apple, and is subject to credit approval and credit limit. Financing terms
+                        vary by product. Taxes and shipping are not included in ACMI and are subject to your card’s
+                        variable APR. See the Apple Card Customer Agreement(Opens in a new window) for more information.
+                        ACMI is not available for purchases made online at special storefronts. The last month’s payment
+                        for each product will be the product's purchase price, less all other payments at the monthly
+                        payment amount. ACMI financing is subject to change at any time for any reason, including but
+                        not limited to, installment term lengths and eligible products. See
+                        https://support.apple.com/kb/HT211204(Opens in a new window) for information about upcoming
+                        changes to ACMI financing.
+                    </p>
+                    <p role="listitem">
+                        ° New and qualified returning subscribers only. $9.99/month after free trial. Only one offer per
+                        Apple ID and only one offer per family if you’re part of a Family Sharing group, regardless of
+                        the number of devices you or your family purchases. This offer is not available if you or your
+                        Family have previously accepted an Apple TV+ three months free or one year free offer. Offer
+                        good for 3 months after eligible device is activated. Plan automatically renews until cancelled.
+                        Restrictions and other terms apply.
+                    </p>
+                    <p class="listitem">
+                        ^ Compatible hardware and software required. Not all content available in Spatial Audio with
+                        Dolby Atmos.
+                    </p>
+                    <p class="listitem">
+                        1. Special pricing available to qualified customers. To learn more about how to start qualifying
+                        toward special pricing, talk to an Apple Specialist in a store or give us a call at
+                        1‑800‑MY‑APPLE.
+                    </p>
+                    <p class="listitem">
+                        2. $9 two-hour delivery on eligible Apple products in most metros. Offer is not available on
+                        customized Mac, engraved products, and for certain order types including orders paid for with
+                        financing or by bank transfer. Delivery times vary according to your selected delivery address,
+                        availability of your items, and the time of day you place your order. Find a store to view local
+                        store hours or see checkout for estimated delivery. A signature is required for delivery.
+                        Drivers may ask for verbal confirmation of receipt from a safe distance to satisfy the signature
+                        requirement. See https://www.apple.com/shop/shipping-pickup/ for more information.
+                    </p>
+                    <p class="listitem">
+
+                        3. Trade‑in values will vary based on the condition, year, and configuration of your eligible
+                        trade‑in device. Not all devices are eligible for credit. You must be at least the age of
+                        majority to be eligible to trade in for credit or for an Apple Gift Card. Trade‑in value may be
+                        applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value
+                        awarded is based on receipt of a qualifying device matching the description provided when
+                        estimate was made. Sales tax may be assessed on full value of a new device purchase. In‑store
+                        trade‑in requires presentation of a valid photo ID (local law may require saving this
+                        information). Offer may not be available in all stores, and may vary between in-store and online
+                        trade‑in. Some stores may have additional requirements. Apple or its trade‑in partners reserve
+                        the right to refuse, cancel, or limit quantity of any trade‑in transaction for any reason. More
+                        details are available from Apple’s trade‑in partner for trade‑in and recycling of eligible
+                        devices. Restrictions and limitations may apply.
+                    </p>
+                    <p class="listitem">
+                        ⁺ New subscribers only. $10.99/month after trial. Offer available for a limited time to new
+                        subscribers who connect an eligible device to an Apple device running iOS 15 or iPadOS 15 or
+                        later. Offer good for 3 months after eligible device pairing. No audio product purchase
+                        necessary for current owners of eligible devices. Plan automatically renews until cancelled.
+                        Restrictions and other terms apply.
+                    </p>
+                    <p class="listitem">
+                        We approximate your location from your internet IP address by matching it to a geographic region
+                        or from the location entered during your previous visit to Apple.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+                    viewBox="0 0 24 24">
+                    <title>Product</title>
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                </svg>
+                <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About Apple</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Newsroom</a></li>
+                    <li><a class="link-secondary" href="#">Apple Leadership</a></li>
+                    <li><a class="link-secondary" href="#">Career Opportunities</a></li>
+                    <li><a class="link-secondary" href="#">Investors</a></li>
+                    <li><a class="link-secondary" href="#">Ethics & Compliance</a></li>
+                    <li><a class="link-secondary" href="#">Contact Apple</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Account</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Manage Your Apple ID</a></li>
+                    <li><a class="link-secondary" href="#">Apple Store Account</a></li>
+                    <li><a class="link-secondary" href="#">iCloud.com</a></li>
+                    <li><a class="link-secondary" href="#">Payment & shipping</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Apple Wallet</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Wallet</a></li>
+                    <li><a class="link-secondary" href="#">Apple Card</a></li>
+                    <li><a class="link-secondary" href="#">Apple Pay</a></li>
+                    <li><a class="link-secondary" href="#">Apple Cash</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Apple Store</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Find a Store</a></li>
+                    <li><a class="link-secondary" href="#">Genius Bar</a></li>
+                    <li><a class="link-secondary" href="#">Today at Apple</a></li>
+                    <li><a class="link-secondary" href="#">Apple Camp</a></li>
+                    <li><a class="link-secondary" href="#">Apple Store App</a></li>
+                    <li><a class="link-secondary" href="#">Certified Refurbished</a></li>
+                    <li><a class="link-secondary" href="#">Apple Trade In</a></li>
+                    <li><a class="link-secondary" href="#">Financing</a></li>
+                    <li><a class="link-secondary" href="#">Carrier Deals at Apple</a></li>
+                    <li><a class="link-secondary" href="#">Order Status</a></li>
+                    <li><a class="link-secondary" href="#">Shopping Help</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md">
+                <h5>Entertainment</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Apple One</a></li>
+                    <li><a class="link-secondary" href="#">Apple TV+</a></li>
+                    <li><a class="link-secondary" href="#">Apple Music</a></li>
+                    <li><a class="link-secondary" href="#">Apple Arcade</a></li>
+                    <li><a class="link-secondary" href="#">Apple Fitness+</a></li>
+                    <li><a class="link-secondary" href="#">Apple News+</a></li>
+                    <li><a class="link-secondary" href="#">Apple Podcasts</a></li>
+                    <li><a class="link-secondary" href="#">Apple Books</a></li>
+                    <li><a class="link-secondary" href="#">App Store</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <section class="as-globalfooter-mini" data-nosnippet data-autom="globalfooter-mini">
+        <div class="as-globalfooter-mini-shop">
+            <p>
+                More ways to shop: <span class="nowrap">
+                    <a href="https://www.apple.com/retail" data-slot-name="footer-Config" data-feature-name="FooterNavigation" data-display-name="Find an apple store">Find an Apple store</a>
+                </span>or <a href="https://locate.apple.com/" data-slot-name="footer-Config" data-feature-name="FooterNavigation" data-display-name="other retailer">other retailer</a> near you. or <span class="nowrap">Call<span>1‑800‑MY‑APPLE.</span></span>.
+            </p>
+        </div>
+        <div class="as-globalfooter-mini-locale">
+            <a href="https://www.apple.com/choose-your-country" data-slot-name="footer-Config" data-feature-name="FooterNavigation" data-display-name="Country selector" class="as-globalfooter-mini-locale-link" data-autom="footer">United States</a>
+        </div>
+        <div class="as-globalfooter-mini-legal">
+            <div class="as-globalfooter-mini-legal-copyright">
+                Copyright © 2023 Apple Inc. All rights reserved.
+            </div>
+            <div class="as-globalfooter-mini-legal-link">
+                <a href="https://www.apple.com/privacy/privacy-policy">Privacy Policy</a> | <a href="https://apple.com/legal/internet-services/terms/site.html">Terms of use</a> | <a href="https://www.apple.com/shop/open/salespolicies">Sales and Refunds</a> | <a href="https://apple.com/legal">Legal</a> | <div><a href="
+                    https://www.apple.com/shop/browse/sitemap"></a></div>
+        
+            </div>
+            </div>
+    </section>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
